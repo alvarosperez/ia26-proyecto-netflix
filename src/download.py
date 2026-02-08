@@ -1,5 +1,7 @@
 
 import requests
+import os
+import json
 
 from config import ACCESS_TOKEN
 
@@ -13,4 +15,11 @@ headers = {
 
 response = requests.get(url_popular_movies, headers=headers)
 
-print(response.json()["results"])
+results = response.json()["results"]
+
+os.makedirs("./data/raw", exist_ok=True)
+
+with open("./data/raw/popular_movies.txt", "w") as fIn:
+    for movie in results:
+        fIn.write(json.dumps(movie) + "\n")
+
