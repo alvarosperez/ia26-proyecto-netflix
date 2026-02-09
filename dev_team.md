@@ -1,3 +1,4 @@
 ## Integrantes del equipo
 
-- Álvaro Sánchez
+- Rodrigo Ahuatzin Oropeza
+-
