@@ -23,6 +23,6 @@ with open(file_path, "w", encoding="utf-8") as f:
     for movie in movies:
         f.write(json.dumps(movie) + "\n")
 
-    json.dump(movies, f, indent=4, ensure_ascii=False)
+    #json.dump(movies, f, indent=4, ensure_ascii=False)
 
 print(f"Se guardaron {len(movies)} películas en {file_path}")
