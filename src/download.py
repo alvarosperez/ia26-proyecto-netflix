@@ -19,10 +19,28 @@ os.makedirs("data/raw", exist_ok=True)
 #Guardar el archivo
 file_path = "data/raw/popular_movies.json"
 
+try:
+    with open(file_path, "w", encoding="utf-8") as f:
+        for movie in movies:
+            f.write(json.dumps(movie, ensure_ascii=False) + "\n")
+
+    print(f"Se guardaron {len(movies)} películas en {file_path}")
+
+except Exception as e:
+    print(f"Error al guardar el archivo: {e}")
+
+#Genres
+
+url_geners = "https://api.themoviedb.org/3/genre/movie/list"
+
+response = requests.get(url_geners, headers=headers)
+genres= response.json()["genres"]
+
+#Guardar el archivo de genre
+file_path= "data/raw/movie_genre.json"
+
 with open(file_path, "w", encoding="utf-8") as f:
-    for movie in movies:
-        f.write(json.dumps(movie) + "\n")
+        for genre in genres:
+            f.write(json.dumps(genre) + "\n")
 
-    #json.dump(movies, f, indent=4, ensure_ascii=False)
-
-print(f"Se guardaron {len(movies)} películas en {file_path}")
+print(f"Se guardaron {len(genres)} géneros en {file_path}")
