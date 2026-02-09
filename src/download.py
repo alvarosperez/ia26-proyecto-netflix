@@ -14,7 +14,6 @@ headers = {
 response = requests.get(url_popular_movies, headers=headers)
 movies = response.json()["results"]
 
-<<<<<<< HEAD
 print(response.json()["results"]) 
 =======
 os.makedirs("data/raw", exist_ok=True)
