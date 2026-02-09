@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> main
 import os
 import json
 import requests
@@ -26,8 +23,7 @@ file_path = "data/raw/popular_movies.json"
 with open(file_path, "w", encoding="utf-8") as f:
     json.dump(movies, f, indent=4, ensure_ascii=False)
 
-<<<<<<< HEAD
+
 print(f"Se guardaron {len(movies)} películas en {file_path}")
-=======
+
 print(f"Se guardaron {len(movies)} películas en {file_path}")
->>>>>>> main
