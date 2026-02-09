@@ -11,5 +11,5 @@ Análisis de datos de películas y series para entender el comportamiento de los
 ### Instrucciones
 
 - Virtual env: python -m venv .venv
-- Activarlo: .venv\Scripts\activate
+- Activarlo: .venv\Scripts\activate 
 - Librerías: pip install -r requirements.txt
