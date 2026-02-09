@@ -25,3 +25,25 @@ with open(file_path, "w", encoding="utf-8") as f:
     #json.dump(movies, f, indent=4, ensure_ascii=False)
 
 print(f"Se guardaron {len(movies)} películas en {file_path}")
+
+
+url_genres = "https://api.themoviedb.org/3/genre/movie/list?language=en"
+
+response = requests.get(url_genres, headers=headers)
+genres = response.json()["genres"]
+
+headers = {
+    "accept": "application/json",
+    "Authorization": f"Bearer {ACCESS_TOKEN} "
+}
+
+response = requests.get(url_genres, headers=headers)
+
+file_genres = "data/raw/popular_genre.json"
+
+with open(file_genres, "w", encoding="utf-8") as f:
+    for genre in genres:
+        f.write(json.dumps(genre)+ "\n")
+
+print(f"Se guardaron {len(genres)} películas en {file_genres}")
+    
