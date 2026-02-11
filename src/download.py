@@ -63,28 +63,30 @@ def api_request(url):
 def data_writing(file_path, data):
     os.makedirs("data/raw", exist_ok=True)
 
- #Guardar el archivo
- file_path = "data/raw/popular_movies.json"
+    #Guardar el archivo
+    file_path = "data/raw/popular_movies.json"
 
- with open(file_path, "w", encoding="utf-8") as f:
-    for element in data:
+    with open(file_path, "w", encoding="utf-8") as f:
+     for element in data:
         f.write(json.dumps(element, ensure_ascii=False) + "\n")
     
- ## json.dump(movies, f, indent=4, ensure_ascii=False)
+     
 
- print(f"Se guardaron {len(data)} elementos en {file_path}")
+# json.dump(movies, f, indent=4, ensure_ascii=False)
+
+    print(f"Se guardaron {len(data)} elementos en {file_path}")
  
     
     
 ## movies 
- movie_url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
- movie_data = api_request(movie_url)
- movie_file_path = "data/raw/popular_movies.json"
- data_writing(movie_file_path, movie_data["results"])
+    movie_url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
+    movie_data = api_request(movie_url)
+    movie_file_path = "data/raw/popular_movies.json"
+    data_writing(movie_file_path, movie_data["results"])
 
 
 ## genres
- genre_url = "https://api.themoviedb.org/3/genre/movie/list?language=en-US"
- genre_data = api_request(genre_url)
- genre_file_path = "data/raw/popular_genres.json"
- data_writing(genre_file_path, genre_data["genres"])
+    genre_url = "https://api.themoviedb.org/3/genre/movie/list?language=en-US"
+    genre_data = api_request(genre_url)
+    genre_file_path = "data/raw/popular_genres.json"
+    data_writing(genre_file_path, genre_data["genres"])
