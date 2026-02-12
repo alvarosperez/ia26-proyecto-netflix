@@ -45,4 +45,5 @@ with open(file_generos, "w", encoding="utf-8") as f:
     for genero in lista_generos:
         f.write(json.dumps(genero) + "\n")
 
+
 print(f"--> Se guardaron {len(lista_generos)} géneros en {file_generos}")
