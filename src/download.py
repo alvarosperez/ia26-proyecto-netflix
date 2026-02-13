@@ -29,8 +29,18 @@ movie_data = api_request(movie_url)
 movie_file_path = "data/raw/popular_movies.json"
 data_writing(movie_file_path, movie_data["results"])
 
-# genres
+# movie genres
 genre_url = "https://api.themoviedb.org/3/genre/movie/list"
 genre_data = api_request(genre_url)
 genre_file_path = "data/raw/movie_genres.json"
 data_writing(genre_file_path, genre_data["genres"])
+
+# series
+series_url = "https://api.themoviedb.org/3/tv/popular?language=en-US&page=1"
+tv_data = api_request(series_url)
+data_writing("data/raw/popular_series.json", tv_data["results"])
+
+# series genres
+series_genre_url = "https://api.themoviedb.org/3/genre/tv/list"
+tv_genre_data = api_request(series_genre_url)
+data_writing("data/raw/tv_genres.json", tv_genre_data["genres"])
