@@ -37,10 +37,10 @@ data_writing(genre_file_path, genre_data["genres"])
 
 # series
 series_url = "https://api.themoviedb.org/3/tv/popular?language=en-US&page=1"
-tv_data = api_request(series_url)
-data_writing("data/raw/popular_series.json", tv_data["results"])
+series_data = api_request(series_url)
+data_writing("data/raw/popular_series.json", series_data["results"])
 
 # series genres
 series_genre_url = "https://api.themoviedb.org/3/genre/tv/list"
-tv_genre_data = api_request(series_genre_url)
-data_writing("data/raw/tv_genres.json", tv_genre_data["genres"])
+series_genre_data = api_request(series_genre_url)
+data_writing("data/raw/series_genres.json", series_genre_data["genres"])
