@@ -1,4 +1,6 @@
 import os
+import json
+import requests
 
 from config import ACCESS_TOKEN
 
@@ -9,7 +11,7 @@ headers = {
     "Authorization": f"Bearer {ACCESS_TOKEN}"
 }
 
-def api_request():
+def api_request(url):
     headers = {    
         "accept": "application/json",
         "Authorization": f"Bearer {ACCESS_TOKEN}"
@@ -19,7 +21,7 @@ def api_request():
     return response.json()
 
 
-def data_writing():
+def data_writing(file_path, data):
      
     os.makedirs("data/raw", exist_ok=True)
     
@@ -27,7 +29,7 @@ def data_writing():
         for element in data:
             f.write(json.dumps(element) + "\n")
 
-    print(f"Se guardaron {len(movies)} elementos en {file_path}")
+    print(f"Se guardaron {len(data)} elementos en {file_path}")
 
 
 #movies
@@ -37,9 +39,20 @@ movie_file_path = "data/raw/popular_movies.json"
 data_writing(movie_file_path, movie_data["results"])
 
 #genres
-gene_url = "https://api.theoviedb.org/3/genre/movie/list"
+genre_url= "https://api.themoviedb.org/3/genre/movie/list"
 genre_data = api_request(genre_url)
 genre_file_path = "data/raw/movie_genres.json"
 data_writing(genre_file_path, genre_data["genres"] )
 
+#series
+serie_url= "https://api.themoviedb.org/3/tv/popular?language=en-US&page=1"
+serie_data = api_request(serie_url)
+serie_file_path = "data/raw/popular_series.json"
+data_writing(serie_file_path, serie_data["results"])
+
+#series genres
+serie_genre_url = "https://api.themoviedb.org/3/genre/tv/list?language=en"
+serie_genre_data = api_request(serie_genre_url)
+serie_genre_file_path = "data/raw/serie_genres.json"
+data_writing(serie_genre_file_path, serie_genre_data["genres"])
 

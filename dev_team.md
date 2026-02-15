@@ -1,3 +1,3 @@
 ## Integrantes del equipo
 
-- Álvaro Sánchez
+-Sanaz Amanmohammadi
