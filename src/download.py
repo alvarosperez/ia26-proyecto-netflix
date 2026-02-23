@@ -1,11 +1,10 @@
 import os
-import json
 import requests
-
+import json
 from config import ACCESS_TOKEN
 
-def api_request(url):
 
+def api_request(url):
     headers = {
         "accept": "application/json",
         "Authorization": f"Bearer {ACCESS_TOKEN}"
@@ -17,34 +16,34 @@ def api_request(url):
 
 def data_writing(file_path, data):
 
+    os.makedirs("data/raw", exist_ok=True)
 
     with open(file_path, "w", encoding="utf-8") as f:
         for element in data:
-            f.write(json.dumps(data) + "\n")
+            f.write(json.dumps(element, ensure_ascii=False) + "\n")
 
     print(f"Se guardaron {len(data)} elementos en {file_path}")
 
-
-# movies
+#peliculas
 movie_url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
 movie_data = api_request(movie_url)
 movie_file_path = "data/raw/popular_movies.json"
-data_writing(movie_file_path, movie_data["results"]) 
+data_writing(movie_file_path, movie_data["results"])
 
-# movie genres
-movie_genre_url = "https://api.themoviedb.org/3/genre/movie/list"
-genre_data = api_request(movie_genre_url)
+#generos 
+genre_url = "https://api.themoviedb.org/3/genre/movie/list?language=en-US"
+genre_data = api_request(genre_url)
 genre_file_path = "data/raw/movie_genres.json"
 data_writing(genre_file_path, genre_data["genres"])
 
-# series
-series_url = "https://api.themoviedb.org/3/tv/popular"
-series_data = api_request(series_url)
-series_file_path = "data/raw/popular_series.json"
-data_writing(series_file_path, series_data["results"])
+#series populares
+tv_url = "https://api.themoviedb.org/3/tv/popular?language=en-US&page=1"
+tv_data = api_request(tv_url)
+tv_file_path = "data/raw/popular_series.json"
+data_writing(tv_file_path, tv_data["results"])
 
-# series genres
-series_genre_url = "https://api.themoviedb.org/3/genre/tv/list"
-genre_data = api_request(series_genre_url)
-series_genre_file_path = "data/raw/series_genres.json"
-data_writing(series_genre_file_path, genre_data["genres"])
+#generos de series
+tv_genre_url = "https://api.themoviedb.org/3/genre/tv/list?language=en-US"
+tv_genre_data = api_request(tv_genre_url)
+tv_genre_file_path = "data/raw/tv_genres.json"
+data_writing(tv_genre_file_path, tv_genre_data["genres"])
