@@ -2,6 +2,8 @@ import os
 import requests
 import json
 from config import ACCESS_TOKEN
+from log import registro_log
+
 
 def api_request(url):
     headers = {
@@ -20,8 +22,7 @@ def data_writing(file_path, data):
         for element in data:
             f.write(json.dumps(element) + "\n")
 
-    print(f"Se guardaron {len(data)} elementos en {file_path}")
-
+    registro_log (f"Se guardaron {len(data)} elementos en {file_path}")
 # movies
 movie_url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
 movie_data = api_request(movie_url)
@@ -45,3 +46,10 @@ serie_genre_url = "https://api.themoviedb.org/3/genre/tv/list?language=en"
 serie_genre_data = api_request(serie_genre_url)
 serie_genre_file_path = "data/raw/serie_genres.json"
 data_writing(serie_genre_file_path, serie_genre_data["genres"])
+
+
+
+
+
+
+
