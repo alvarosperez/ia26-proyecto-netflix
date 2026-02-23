@@ -1,0 +1,8 @@
+Se guardaron 20 elementos en data/raw/popular_movies.json
+Se guardaron 19 elementos en data/raw/movie_genres.json
+Se guardaron 20 elementos en data/raw/popular_series.json
+Se guardaron 16 elementos en data/raw/tv_genres.json
+2026-02-23 09:50:42.522276-Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 09:50:47.139856-Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 09:50:48.681898-Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 09:50:50.273602-Se guardaron 16 elementos en data/raw/tv_genres.json

@@ -2,6 +2,7 @@ import os
 import requests
 import json
 from config import ACCESS_TOKEN
+from logs import registros
 
 
 def api_request(url):
@@ -22,7 +23,7 @@ def data_writing(file_path, data):
         for element in data:
             f.write(json.dumps(element, ensure_ascii=False) + "\n")
 
-    print(f"Se guardaron {len(data)} elementos en {file_path}")
+    registros(f"Se guardaron {len(data)} elementos en {file_path}")
 
 #peliculas
 movie_url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
