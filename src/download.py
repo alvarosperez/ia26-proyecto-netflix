@@ -22,15 +22,21 @@ def data_writing(file_path, data):
     with open(file_path, "w", encoding="utf-8") as f:
         for element in data:
             f.write(json.dumps(element, ensure_ascii=False) + "\n")
-    
+
     print(f"Se guardaron {len(data)} elementos en {file_path}")
     registro_logs(f"Se guardaron {len(data)} elementos en {file_path}")
 
-#peliculas
-movie_url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
-movie_data = api_request(movie_url)
+# peliculas
+all_movies = []
+
+for page in range(1, 7):  # 1 a 6
+    movie_url = f"https://api.themoviedb.org/3/movie/popular?language=en-US&page={page}"
+    movie_data = api_request(movie_url)
+    all_movies.extend(movie_data["results"])
+    registro_logs(f"Descargada página {page} de películas")
+
 movie_file_path = "data/raw/popular_movies.json"
-data_writing(movie_file_path, movie_data["results"])
+data_writing(movie_file_path, all_movies)
 
 #generos 
 genre_url = "https://api.themoviedb.org/3/genre/movie/list?language=en-US"
