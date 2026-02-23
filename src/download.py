@@ -1,24 +1,21 @@
 
 import os
-import json
 import requests
-
+import json
 from config import ACCESS_TOKEN
 
-url_popular_movies = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
 
-headers = {
-    "accept": "application/json",
-    "Authorization": f"Bearer {ACCESS_TOKEN}"
-}
+def api_request(url):
+    headers = {
+        "accept": "application/json",
+        "Authorization": f"Bearer {ACCESS_TOKEN}"
+    }
 
-response = requests.get(url_popular_movies, headers=headers)
-movies = response.json()["results"]
+    response = requests.get(url, headers=headers)
+    return response.json()
 
-os.makedirs("data/raw", exist_ok=True)
 
-#Guardar el archivo
-file_path = "data/raw/popular_movies.json"
+def data_writing(file_path, data):
 
 with open(file_path, "w", encoding="utf-8") as f:
     
