@@ -2,7 +2,8 @@ import os
 import requests
 import json
 from config import ACCESS_TOKEN
-from src.logs import registro_log
+from logs import registro_log
+
 
 def api_request(url):
     headers = {
