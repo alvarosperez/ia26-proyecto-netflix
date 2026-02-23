@@ -1,25 +1,49 @@
 import os
-import json
 import requests
-
+import json
 from config import ACCESS_TOKEN
 
-url_popular_movies = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
 
-headers = {
-    "accept": "application/json",
-    "Authorization": f"Bearer {ACCESS_TOKEN}"
-}
+def api_request(url):
+    headers = {
+        "accept": "application/json",
+        "Authorization": f"Bearer {ACCESS_TOKEN}"
+    }
 
-response = requests.get(url_popular_movies, headers=headers)
-movies = response.json()["results"]
+    response = requests.get(url, headers=headers)
+    return response.json()
 
-os.makedirs("data/raw", exist_ok=True)
 
-#Guardar el archivo
-file_path = "data/raw/popular_movies.json"
+def data_writing(file_path, data):
 
-with open(file_path, "w", encoding="utf-8") as f:
-    json.dump(movies, f, indent=4, ensure_ascii=False)
+    os.makedirs("data/raw", exist_ok=True)
 
-print(f"Se guardaron {len(movies)} películas en {file_path}")
+    with open(file_path, "w", encoding="utf-8") as f:
+        for element in data:
+            f.write(json.dumps(element, ensure_ascii=False) + "\n")
+
+    print(f"Se guardaron {len(data)} elementos en {file_path}")
+
+#peliculas
+movie_url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
+movie_data = api_request(movie_url)
+movie_file_path = "data/raw/popular_movies.json"
+data_writing(movie_file_path, movie_data["results"])
+
+#generos 
+genre_url = "https://api.themoviedb.org/3/genre/movie/list?language=en-US"
+genre_data = api_request(genre_url)
+genre_file_path = "data/raw/movie_genres.json"
+data_writing(genre_file_path, genre_data["genres"])
+
+#series populares
+tv_url = "https://api.themoviedb.org/3/tv/popular?language=en-US&page=1"
+tv_data = api_request(tv_url)
+tv_file_path = "data/raw/popular_series.json"
+data_writing(tv_file_path, tv_data["results"])
+
+#generos de series
+tv_genre_url = "https://api.themoviedb.org/3/genre/tv/list?language=en-US"
+tv_genre_data = api_request(tv_genre_url)
+tv_genre_file_path = "data/raw/tv_genres.json"
+data_writing(tv_genre_file_path, tv_genre_data["genres"])
