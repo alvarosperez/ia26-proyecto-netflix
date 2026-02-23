@@ -18,7 +18,7 @@ def api_request(url):
 def data_writing(file_path, data):
 
     os.makedirs("data/raw", exist_ok=True)
-    with open(file_path, "a", encoding="utf-8") as f:
+    with open(file_path, mode = "w", encoding="utf-8") as f:
         for element in data:
             f.write(json.dumps(element, ensure_ascii=False) + "\n")
 
@@ -31,6 +31,10 @@ for pages in range(1,7):
     movie_data = api_request(movie_url)
     movie_file_path = "data/raw/popular_movies.json"
     data_writing(movie_file_path, movie_data["results"])
+    if pages == 1:
+        data_writing(movie_file_path, movie_data, "w")
+    else:
+        data_writing(movie_file_path, movie_data, "a")
 
 #generos 
 genre_url = "https://api.themoviedb.org/3/genre/movie/list?language=en-US"
@@ -44,6 +48,10 @@ for pages in range(1,7):
     tv_data = api_request(tv_url)
     tv_file_path = "data/raw/popular_series.json"
     data_writing(tv_file_path, tv_data["results"])
+    if pages == 1:
+        data_writing(tv_file_path, tv_data, "w")
+    else:
+        data_writing(tv_file_path, tv_data, "a")
 
 #generos de series
 tv_genre_url = "https://api.themoviedb.org/3/genre/tv/list?language=en-US"
