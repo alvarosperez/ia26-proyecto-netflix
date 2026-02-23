@@ -1,7 +1,6 @@
 import os
-import json
 import requests
-
+import json
 from config import ACCESS_TOKEN
 
 def api_request(url):
