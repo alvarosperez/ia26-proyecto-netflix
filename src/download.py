@@ -3,7 +3,7 @@ import json
 import requests
 from logs import registro_log
 from config import ACCESS_TOKEN
-from clean import json_csv
+from clean import json_to_csv
 
 def api_request(url):
     headers = {
