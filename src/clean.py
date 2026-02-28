@@ -24,7 +24,5 @@ def clean_movies(input_file, output_file):
         writer.writeheader()
         writer.writerows(cleaned_movies)
 
-    print(f"Se limpiaron {len(cleaned_movies)} películas y se guardaron en {output_file}")
 
-# Llamar la función
 clean_movies("data/raw/popular_movies.json", "data/clean/popular_movies.csv")
