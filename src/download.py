@@ -42,7 +42,7 @@ genre_file_path = "data/raw/movie_genres.json"
 data_writing(genre_file_path, genre_data["genres"], mode="w")
 
 
-## series populares (1 página)
+## series populares 
 tv_url = "https://api.themoviedb.org/3/tv/popular?language=en-US&page=1"
 tv_data = api_request(tv_url)
 tv_file_path = "data/raw/popular_series.json"
