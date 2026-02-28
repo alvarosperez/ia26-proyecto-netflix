@@ -1,50 +1,58 @@
 import os
-import requests
 import json
+import requests
+
 from config import ACCESS_TOKEN
-from logs import registro_log
+from logs import registro_logs
+
+url_popular_movies = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
+
+headers = {
+    "accept": "application/json",
+    "Authorization": f"Bearer {ACCESS_TOKEN}"
+}
 
 def api_request(url):
-    headers = {
+    headers = {    
         "accept": "application/json",
         "Authorization": f"Bearer {ACCESS_TOKEN}"
     }
-
+     
     response = requests.get(url, headers=headers)
     return response.json()
 
 
 def data_writing(file_path, data):
-
+     
     os.makedirs("data/raw", exist_ok=True)
-
+    
     with open(file_path, "w", encoding="utf-8") as f:
         for element in data:
-            f.write(json.dumps(element, ensure_ascii=False) + "\n")
+            f.write(json.dumps(element) + "\n")
+            
+    registro_logs(f"Se guardaron {len(data)} elementos en {file_path}")
 
-    print(f"Se guardaron {len(data)} elementos en {file_path}")
-    registro_log(f"Se guardaron {len(data)} elementos en {file_path}")
 
-#peliculas
-movie_url = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
+#movies
+movie_url= "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
 movie_data = api_request(movie_url)
 movie_file_path = "data/raw/popular_movies.json"
 data_writing(movie_file_path, movie_data["results"])
 
-#generos 
-genre_url = "https://api.themoviedb.org/3/genre/movie/list?language=en-US"
+#genres
+genre_url= "https://api.themoviedb.org/3/genre/movie/list"
 genre_data = api_request(genre_url)
 genre_file_path = "data/raw/movie_genres.json"
-data_writing(genre_file_path, genre_data["genres"])
+data_writing(genre_file_path, genre_data["genres"] )
 
-#series populares
-tv_url = "https://api.themoviedb.org/3/tv/popular?language=en-US&page=1"
-tv_data = api_request(tv_url)
-tv_file_path = "data/raw/popular_series.json"
-data_writing(tv_file_path, tv_data["results"])
+#series
+serie_url= "https://api.themoviedb.org/3/tv/popular?language=en-US&page=1"
+serie_data = api_request(serie_url)
+serie_file_path = "data/raw/popular_series.json"
+data_writing(serie_file_path, serie_data["results"])
 
-#generos de series
-tv_genre_url = "https://api.themoviedb.org/3/genre/tv/list?language=en-US"
-tv_genre_data = api_request(tv_genre_url)
-tv_genre_file_path = "data/raw/tv_genres.json"
-data_writing(tv_genre_file_path, tv_genre_data["genres"])
+#series genres
+serie_genre_url = "https://api.themoviedb.org/3/genre/tv/list?language=en"
+serie_genre_data = api_request(serie_genre_url)
+serie_genre_file_path = "data/raw/serie_genres.json"
+data_writing(serie_genre_file_path, serie_genre_data["genres"])
