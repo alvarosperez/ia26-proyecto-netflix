@@ -1,0 +1,4 @@
+2026-03-01 19:52:11.297021  -  Se guardan19 elementosdata/raw/movie_genres.json
+2026-03-01 19:52:11.833102  -  Se guardan20 elementosdata/raw/popular_series.json
+2026-03-01 19:52:12.378724  -  Se guardan16 elementosdata/raw/serie_genres.json
+2026-03-01 19:52:12.965587  -  Archivo limpio creado en data/clean/popular_movies.csv
