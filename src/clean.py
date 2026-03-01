@@ -19,7 +19,7 @@ with open("data/raw/popular_movies.json", "r", encoding="utf-8") as f:
         peliculas_procesadas.append(fila_out)
 
 with open("data/clean/popular_movies.csv", "w", encoding="utf-8", newline="") as f2:
-    writer = csv.writer(f2, delimiter=';') 
+    writer = csv.writer(f2, delimiter=',') 
     
     writer.writerow(["id", "titulo", "genero", "popularidad", "nota"])
     
@@ -27,3 +27,4 @@ with open("data/clean/popular_movies.csv", "w", encoding="utf-8", newline="") as
         writer.writerow(n)
 
 print(f"Se han procesado {len(peliculas_procesadas)} películas y guardado correctamente.")
+
