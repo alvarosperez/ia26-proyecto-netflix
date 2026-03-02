@@ -3,6 +3,10 @@ import csv
 import json
 
 def json_to_csv(file_path):
+    if not os.path.exists(file_path):
+        print(f"Archivo {file_path} no encontrado. Saltando conversión.")
+        return
+    
     out = []
     with open(file_path, "r", encoding="utf-8") as f:
         for line in f:
@@ -20,8 +24,8 @@ def json_to_csv(file_path):
                 out.append(fila)
 
     fieldnames = ["id","title","genre_ids","popularity","vote_average"]
+    os.makedirs("data/clean", exist_ok=True)
     with open("data/clean/popular_movies.csv", "w", newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(csv_file,fieldnames,extrasaction="ignore")
         writer.writeheader()
         writer.writerows(out)
-json_to_csv("data/raw/popular_movies.json")
