@@ -12,10 +12,7 @@ def crear_diccionario (file_path):
                 cambiar = json.loads(lin.strip())
                
                 diccionario[cambiar.get("id")] = cambiar.get("name")
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
         return diccionario
 
 
@@ -34,11 +31,7 @@ def json_to_csv(file_path):
                 fila = {
                     "id": guardar.get("id"),
                     "title": guardar.get("title"),
-<<<<<<< Updated upstream
                     "genre_ids": genres_name,
-=======
-                    "genre_ids": crear_diccionario("data/raw/movie_genres.json"),
->>>>>>> Stashed changes
                     "popularity": guardar.get("popularity"),
                     "vote_average": guardar.get("vote_average")
                 }
