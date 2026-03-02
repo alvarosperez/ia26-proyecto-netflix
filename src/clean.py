@@ -1,41 +1,27 @@
-import json
+import os
 import csv
-from pathlib import Path
+import json
 
-
-def limpiar_peliculas():
-    input_path = Path("data/raw/popular_movies.json")
-    output_path = Path("data/clean/popular_movies.csv")
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    peliculas_totales = []
-
-    # ✅ leer JSON lines (tu caso)
-    with open(input_path, "r", encoding="utf-8") as f:
-        for linea in f:
-            linea = linea.strip()
-            if not linea:
+def json_to_csv(file_path):
+    out = []
+    with open(file_path, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip() and ( line.strip() == "[" or line.strip() == "]" or line.strip() == ""):
                 continue
-            peli = json.loads(linea)
-            peliculas_totales.append(peli)
+            else :
+                guardar = json.loads(line.strip())
+                fila = {
+                    "id": guardar.get("id"),
+                    "title": guardar.get("title"),
+                    "genre_ids": guardar.get("genre_ids"),
+                    "popularity": guardar.get("popularity"),
+                    "vote_average": guardar.get("vote_average")
+                }
+                out.append(fila)
 
-    # ✅ escribir csv
-    with open(output_path, "w", newline="", encoding="utf-8") as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow(["id", "titulo", "generos", "popularidad", "nota"])
-
-        for peli in peliculas_totales:
-            writer.writerow([
-                peli.get("id"),
-                peli.get("title"),
-                ",".join(map(str, peli.get("genre_ids", []))),
-                peli.get("popularity"),
-                peli.get("vote_average"),
-            ])
-
-    print(f"CSV generado con {len(peliculas_totales)} registros")
-
-
-if __name__ == "__main__":
-    limpiar_peliculas()
+    fieldnames = ["id","title","genre_ids","popularity","vote_average"]
+    with open("data/clean/popular_movies.csv", "w", newline="", encoding="utf-8") as csv_file:
+        writer = csv.DictWriter(csv_file,fieldnames,extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(out)
+json_to_csv("data/raw/popular_movies.json")
