@@ -2,8 +2,7 @@ import os
 import requests
 import json
 from config import ACCESS_TOKEN
-from logs import registros
-
+from logs import registro_logs
 
 def api_request(url):
     headers = {
@@ -15,23 +14,24 @@ def api_request(url):
     return response.json()
 
 
-def data_writing(file_path, data, mode = "w"):
+
+def data_writing(file_path, data, mode="w"):
 
     os.makedirs("data/raw", exist_ok=True)
-    
+
     with open(file_path, mode, encoding="utf-8") as f:
         for element in data:
             f.write(json.dumps(element, ensure_ascii=False) + "\n")
 
-    registros(f"Se guardaron {len(data)} elementos en {file_path}")
 
+    registro_logs(f"Se guardaron {len(data)} elementos en {file_path}")
 
 #peliculas
-for pages in range(1,7):
-    movie_url = f"https://api.themoviedb.org/3/movie/popular?language=en-US&page={pages}"
+for page in range(1, 7):
+    movie_url = f"https://api.themoviedb.org/3/movie/popular?language=en-US&page={page}"
     movie_data = api_request(movie_url)
     movie_file_path = "data/raw/popular_movies.json"
-    if pages == 1:
+    if page == 1:
         data_writing(movie_file_path, movie_data["results"], "w")
     else:
         data_writing(movie_file_path, movie_data["results"], "a")
