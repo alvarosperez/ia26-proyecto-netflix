@@ -21,7 +21,7 @@ def json_to_csv(file_path):
 
     fieldnames = ["id","title","genre_ids","popularity","vote_average"]
     with open("data/clean/popular_movies.csv", "w", newline="", encoding="utf-8") as csv_file:
-        writer = csv.DictWriter(csv_file,fieldnames=fieldnames,extrasaction="ignore")
+        writer = csv.DictWriter(csv_file,fieldnames,extrasaction="ignore")
         writer.writeheader()
         writer.writerows(out)
 json_to_csv("data/raw/popular_movies.json")
