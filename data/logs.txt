@@ -1,25 +1,147 @@
+2026-02-23 09:54:23.474556 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 09:54:24.305854 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 09:54:25.228748 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 09:54:26.101206 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 09:54:41.624775 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 09:54:42.564778 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 09:54:43.410098 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 09:54:44.209665 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 10:59:47.122200 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 10:59:47.140726 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 10:59:47.153366 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 10:59:47.160763 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 10:59:47.172224 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 10:59:47.180774 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 10:59:48.003710 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 10:59:48.017867 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 10:59:48.033387 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 10:59:48.039639 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 10:59:48.044117 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 10:59:48.051327 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 10:59:48.735323 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 10:59:48.746150 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 10:59:48.757125 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 10:59:48.764640 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 10:59:48.772733 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 10:59:48.779697 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 10:59:49.490984 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 10:59:49.501284 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 10:59:49.508640 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 10:59:49.516029 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 10:59:49.524468 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 10:59:49.534423 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 11:10:45.608083 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:10:46.484603 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:10:47.416913 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 11:11:32.179394 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:11:36.070652 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:11:37.050875 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:11:37.980894 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:11:38.843171 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:11:39.726584 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:11:40.574803 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:11:41.448920 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:11:42.318425 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 11:20:48.037012 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:20:48.897989 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:20:49.840262 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:20:50.720876 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:20:51.516578 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:20:52.468718 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:20:53.368860 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:20:54.219010 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:20:55.069707 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 11:22:08.568215 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:22:09.393182 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:22:10.189379 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:22:11.031293 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:22:11.868968 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:22:12.735993 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:22:13.561421 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:22:14.407278 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:22:15.258485 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 11:29:33.379139 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:34.109747 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:34.837396 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:35.540209 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:36.289384 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:37.020944 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:37.762745 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:29:38.464709 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:29:39.190938 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-23 11:33:33.482608 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:34.206715 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:34.923104 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:35.688464 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:36.432674 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:37.144758 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:37.867172 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:33:38.685054 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:33:39.480116 - Se guardaron 19 elementos en data/raw/series_genre.json
+2026-02-27 17:04:31.909754 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-27 17:04:32.901241 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-27 17:04:33.927958 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-27 17:04:34.931858 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-27 17:04:35.970894 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-27 17:04:37.033241 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-27 17:04:39.110912 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-27 17:04:40.156975 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-27 17:04:41.171899 - Se guardaron 19 elementos en data/raw/series_genre.json
 Se guardaron 20 elementos en data/raw/popular_movies.json
 Se guardaron 19 elementos en data/raw/movie_genres.json
 Se guardaron 20 elementos en data/raw/popular_series.json
 Se guardaron 16 elementos en data/raw/tv_genres.json
-Se guardaron 20 elementos en data/raw/popular_movies.json
-Se guardaron 19 elementos en data/raw/movie_genres.json
-Se guardaron 20 elementos en data/raw/popular_series.json
-Se guardaron 16 elementos en data/raw/tv_genres.json
-Se guardaron 20 elementos en data/raw/popular_movies.json
-Se guardaron 19 elementos en data/raw/movie_genres.json
-Se guardaron 20 elementos en data/raw/popular_series.json
-Se guardaron 16 elementos en data/raw/tv_genres.json
-Se guardaron 20 elementos en data/raw/popular_movies.json
-Se guardaron 19 elementos en data/raw/movie_genres.json
-Se guardaron 20 elementos en data/raw/popular_series.json
-Se guardaron 16 elementos en data/raw/tv_genres.json
-2026-02-23 09:51:53.967135 - Se guardaron 20 elementos en data/raw/popular_movies.json
-2026-02-23 09:51:54.025591 - Se guardaron 19 elementos en data/raw/movie_genres.json
-2026-02-23 09:51:54.104805 - Se guardaron 20 elementos en data/raw/popular_series.json
-2026-02-23 09:51:54.154929 - Se guardaron 16 elementos en data/raw/tv_genres.json
-2026-02-23 11:31:25.651440 - Se guardaron 20 elementos en data/raw/popular_movies.json
-2026-02-23 11:31:28.814436 - Se guardaron 19 elementos en data/raw/movie_genres.json
-2026-02-23 11:31:31.950583 - Se guardaron 20 elementos en data/raw/popular_series.json
-2026-02-23 11:31:35.091867 - Se guardaron 16 elementos en data/raw/tv_genres.json
-2026-02-23 11:31:39.422991 - Se guardaron 120 elementos en data/raw/popular_series.json
+2026-02-23 09:47:51.072701 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 09:47:51.413443 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 09:47:51.742049 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 09:47:52.069057 - Se guardaron 16 elementos en data/raw/tv_genres.json
+2026-02-23 10:59:21.110447 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 10:59:21.617046 - Se guardaron 20 elementos en data/raw/popular_movies_2.json
+2026-02-23 10:59:21.963494 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 10:59:22.313998 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 10:59:22.720161 - Se guardaron 16 elementos en data/raw/tv_genres.json
+2026-02-23 11:26:01.103708 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:01.494767 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:01.914830 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:02.313674 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:02.727561 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:03.165195 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:03.593234 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:26:04.005273 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:26:04.420203 - Se guardaron 16 elementos en data/raw/tv_genres.json
+2026-02-23 11:26:46.272132 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:46.680244 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:47.066776 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:47.464507 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:47.852037 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:48.268846 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:48.689251 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:26:49.109279 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:26:49.520885 - Se guardaron 16 elementos en data/raw/tv_genres.json
+2026-02-23 11:26:59.519956 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:26:59.926035 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:27:00.341908 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:27:00.734344 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:27:01.116244 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:27:01.549829 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:27:02.029921 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:27:02.415142 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:27:02.791883 - Se guardaron 16 elementos en data/raw/tv_genres.json
+2026-02-23 11:28:59.894614 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:00.283343 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:00.671082 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:01.029054 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:01.352503 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:01.684235 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:29:02.005233 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:29:02.318788 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:29:02.652583 - Se guardaron 16 elementos en data/raw/tv_genres.json
+2026-02-23 11:33:44.144780 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:44.491769 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:44.833060 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:45.178381 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:45.502866 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:45.818540 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-02-23 11:33:46.143698 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-02-23 11:33:46.459455 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-02-23 11:33:46.770489 - Se guardaron 16 elementos en data/raw/tv_genres.json
