@@ -26,12 +26,12 @@ def json_to_csv(file_path):
                 guardar = json.loads(line.strip())
                 diccionario = crear_diccionario("data/raw/movie_genres.json")
                 genres_name=[]
-                for genre in guardar.get("genre_ids"):
+                for genre in guardar.get("genres_ids"):
                     genres_name.append(diccionario[genre])
                 fila = {
                     "id": guardar.get("id"),
                     "title": guardar.get("title"),
-                    "genre_ids": genres_name,
+                    "genre_ids": crear_diccionario("data/raw/movie_genres.json"),
                     "popularity": guardar.get("popularity"),
                     "vote_average": guardar.get("vote_average")
                 }
