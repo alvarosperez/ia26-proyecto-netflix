@@ -6,3 +6,12 @@
 2026-03-02 08:49:27.484261  -  Se guardan20 elementosdata/raw/popular_series.json
 2026-03-02 08:49:27.999962  -  Se guardan16 elementosdata/raw/serie_genres.json
 2026-03-02 08:49:28.606596  -  Archivo limpio creado en data/clean/popular_movies.csv
+2026-03-02 09:14:31.604292 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-03-02 09:14:32.200964 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-03-02 09:14:32.779693 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-03-02 09:14:33.467129 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-03-02 09:14:34.020269 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-03-02 09:14:34.671902 - Se guardaron 20 elementos en data/raw/popular_movies.json
+2026-03-02 09:14:35.225882 - Se guardaron 19 elementos en data/raw/movie_genres.json
+2026-03-02 09:14:35.830613 - Se guardaron 20 elementos en data/raw/popular_series.json
+2026-03-02 09:14:36.382136 - Se guardaron 19 elementos en data/raw/series_genre.json

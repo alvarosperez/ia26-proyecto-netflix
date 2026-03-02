@@ -6,7 +6,7 @@ from config import ACCESS_TOKEN
 from clean import json_to_csv
 
 def api_request(url):
-    headers = {    
+    headers = {
         "accept": "application/json",
         "Authorization": f"Bearer {ACCESS_TOKEN}"
     }
