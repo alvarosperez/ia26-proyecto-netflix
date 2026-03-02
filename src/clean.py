@@ -1,25 +1,27 @@
-#tarea: despues de crear archivo, crear csv ordenado 
-import json
+import os
 import csv
+import json
 
-movies = []
+def json_to_csv(file_path):
+    out = []
+    with open(file_path, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip() and ( line.strip() == "[" or line.strip() == "]" or line.strip() == ""):
+                continue
+            else :
+                guardar = json.loads(line.strip())
+                fila = {
+                    "id": guardar.get("id"),
+                    "title": guardar.get("title"),
+                    "genre_ids": guardar.get("genre_ids"),
+                    "popularity": guardar.get("popularity"),
+                    "vote_average": guardar.get("vote_average")
+                }
+                out.append(fila)
 
-with open("data/raw/popular_movies.json", "r", encoding="utf-8") as f:
-    for line in f:
-        movies.append(json.loads(line))
-
-with open("data/clean/popular_movies.csv", "w", encoding="utf-8", newline="") as f:
-    writer = csv.writer(f)
-    
-    writer.writerow(["id", "título", "géneros", "popularidad", "nota"])
-    
-    for movie in movies:
-        writer.writerow([
-            movie.get("id"),
-            movie.get("titulo"),
-            "|".join(str(g) for g in movie.get("genero_ids", [])),
-            movie.get("popularidad"),
-            movie.get("vote_average")
-        ])
-
-print("csv con peliculas")
+    fieldnames = ["id","title","genre_ids","popularity","vote_average"]
+    with open("data/clean/popular_movies.csv", "w", newline="", encoding="utf-8") as csv_file:
+        writer = csv.DictWriter(csv_file,fieldnames,extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(out)
+json_to_csv("data/raw/popular_movies.json")
