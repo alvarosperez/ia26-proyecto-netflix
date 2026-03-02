@@ -6,12 +6,14 @@ import requests
 from config import ACCESS_TOKEN
 from logs import registro_logs
 
-url_popular_movies = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
+def api_request(url):
+    headers = {
+        "accept": "application/json",
+        "Authorization": f"Bearer {ACCESS_TOKEN}"
+    }
 
-headers = {
-    "accept": "application/json",
-    "Authorization": f"Bearer {ACCESS_TOKEN}"
-}
+    response = requests.get(url, headers=headers)
+    return response.json()
 
 def api_request(url):
     headers = {    
