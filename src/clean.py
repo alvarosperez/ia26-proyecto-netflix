@@ -1,49 +1,49 @@
-import json 
 import os
 import csv
-import requests
-from config import ACCESS_TOKEN
+import json
 
-def api_request(url):
-    headers = {
-        "accept": "application/json",
-        "Authorization": f"Bearer {ACCESS_TOKEN}"
-    }
+def json_to_csv(file_path):
+    out = []
+    with open(file_path, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip() and ( line.strip() == "[" or line.strip() == "]" or line.strip() == ""):
+                continue
+            else :
+                guardar = json.loads(line.strip())
 
-    response = requests.get(url, headers=headers)
-    return response.json()
+                #print(guardar.get("genre_ids"))
+                #genre_ids = [28, 80]
+                #genre_ids = ["Accion", "aventuras"]
 
-def data_writing_csv(file_path, data, mode):
-    # Defino los encabezados de la lista
-    headers = ["ID", "Título", "Lista de Géneros", "Popularidad", "Nota"]
-    os.makedirs("data/clean", exist_ok=True) # Aseguro que la dirrección exista, como en el código de download
-    with open(file_path, mode=mode, encoding="utf-8", newline="") as f: # Dejo una línea para cada información de cada película, de ahí el ""
-        writer = csv.DictWriter(f, fieldnames=headers) #Organizo los datos encontrados dentro de f en un diccionario 
-        if mode == "w":
-            writer.writeheader() #Escribo los encabezados siempre y cuando me encuentre en modo "w"
-        for element in data:
-            # Los datos que voy a escribir en cada línea extraidos de la url
-            writer.writerow({
-                "ID": element.get("id"),
-                "Título": element.get("title") or element.get("name"), 
-                "Lista de Géneros": element.get("genre_ids"),
-                "Popularidad": element.get("popularity"),              
-                "Nota": element.get("vote_average")
-            }) #La parte de element.get la hice con IA por qué no sabía cómo extraer los datos de la url de forma ordenada y así incluirlos en las lineas del diccionario
+                diccionario = crear_diccionario_generos('data/raw/movie_genres.json')
+                genre_names = []
+                for genre in guardar.get("genre_ids"):
+                    genre_names.append(diccionario[genre])
 
-# La parte del código de download...
-for pages in range(1, 7):
-    movie_url = f"https://api.themoviedb.org/3/movie/popular?language=en-US&page={pages}"
-    movie_data = api_request(movie_url)
-    movie_file_path = "data/clean/popular_movies.csv" 
+                fila = {
+                    "id": guardar.get("id"),
+                    "title": guardar.get("title"),
+                    "genre_ids": genre_names, # guardar.get("genre_ids"),
+                    "popularity": guardar.get("popularity"),
+                    "vote_average": guardar.get("vote_average")
+                }
+                out.append(fila)
+
+    fieldnames = ["id","title","genre_ids","popularity","vote_average"]
+    with open("data/clean/popular_movies.csv", "w", newline="", encoding="utf-8") as csv_file:
+        writer = csv.DictWriter(csv_file,fieldnames,extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(out)
+
+def crear_diccionario_generos(file_path):
+    diccionario = {}
     
-    if pages == 1:
-        data_writing_csv(movie_file_path, movie_data["results"], "w")
-    else:
-        data_writing_csv(movie_file_path, movie_data["results"], "a")
+    with open(file_path, "r") as fIn:
+        for line in fIn:
+            line = json.loads(line)
+            diccionario[line['id']] = line['name']
 
-genre_url = "https://api.themoviedb.org/3/genre/movie/list?language=en-US"
-genre_data = api_request(genre_url)
-# genre_file_path = "data/clean/movie_genres.json"
-# data_writing_csv(genre_file_path, genre_data["genres"], "w")
-print(genre_data)
+    return diccionario
+
+
+json_to_csv("data/raw/popular_movies.json")
