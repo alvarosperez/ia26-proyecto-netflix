@@ -4,8 +4,6 @@ import csv
 import requests
 from config import ACCESS_TOKEN
 
-
-
 def api_request(url):
     headers = {
         "accept": "application/json",
@@ -28,7 +26,7 @@ def data_writing_csv(file_path, data, mode):
             writer.writerow({
                 "ID": element.get("id"),
                 "Título": element.get("title") or element.get("name"), 
-                "Lista de Géneros": element.get("genre_ids"),          
+                "Lista de Géneros": element.get("genre_ids"),
                 "Popularidad": element.get("popularity"),              
                 "Nota": element.get("vote_average")
             }) #La parte de element.get la hice con IA por qué no sabía cómo extraer los datos de la url de forma ordenada y así incluirlos en las lineas del diccionario
@@ -44,5 +42,8 @@ for pages in range(1, 7):
     else:
         data_writing_csv(movie_file_path, movie_data["results"], "a")
 
-
-
+genre_url = "https://api.themoviedb.org/3/genre/movie/list?language=en-US"
+genre_data = api_request(genre_url)
+# genre_file_path = "data/clean/movie_genres.json"
+# data_writing_csv(genre_file_path, genre_data["genres"], "w")
+print(genre_data)
