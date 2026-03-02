@@ -1,4 +1,5 @@
 from datetime import datetime
+<<<<<<< HEAD
 import os
 
 def registro_log(mensaje):
@@ -11,3 +12,14 @@ def registro_log(mensaje):
     os.makedirs("data/raw", exist_ok=True)
     with open("data/raw/logs.txt", "w") as fOut:
         fOut.write(str(ahora) +  " - " + mensaje + "\n")
+=======
+
+
+def registro_log(mensaje):
+    ahora= datetime.now()
+    print(ahora, " - ",mensaje)
+    with open("data/logs.txt","a") as fOut:
+        fOut.write(str(ahora)+ " - " + mensaje + "\n")
+    
+        
+>>>>>>> main
