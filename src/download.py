@@ -4,14 +4,14 @@ import csv
 import requests
 
 from config import ACCESS_TOKEN
-from logs import registro_logs
+from clean import json_to_csv
 
 def api_request(url):
     headers = {
         "accept": "application/json",
         "Authorization": f"Bearer {ACCESS_TOKEN}"
     }
-
+    
     response = requests.get(url, headers=headers)
     return response.json()
 
@@ -41,7 +41,7 @@ def data_writing(file_path, data, mode= "w"):
 
     os.makedirs("data/raw", exist_ok=True)
 
-    with open(file_path, mode, encoding="utf-8") as f:
+    with open(file_path, mode,  encoding="utf-8") as f:
         for element in data:
             f.write(json.dumps(element, ensure_ascii=False) + "\n")
         
