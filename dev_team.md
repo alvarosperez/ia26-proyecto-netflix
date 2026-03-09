@@ -1,3 +1,5 @@
 ## Integrantes del equipo
-
-- Adrian Reig
+-sanaz 
+-leo
+-fer
+juan diego 

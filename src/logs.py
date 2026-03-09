@@ -6,5 +6,4 @@ def registro_log(mensaje):
     print(ahora, " - ",mensaje)
     with open("data/logs.txt","a") as fOut:
         fOut.write(str(ahora)+ " - " + mensaje + "\n")
-    
         
