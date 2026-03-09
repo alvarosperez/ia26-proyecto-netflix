@@ -1,0 +1,121 @@
+id,title,genre_ids,popularity,vote_average
+1290821,Shelter,"['Action', 'Crime', 'Thriller']",543.5405,6.772
+799882,The Bluff,"['Action', 'Thriller']",390.8723,5.938
+1236153,Mercy,"['Science Fiction', 'Action', 'Thriller']",226.707,7.135
+1199193,Pose,['Thriller'],281.4318,8.25
+1088434,Hellfire,"['Action', 'Thriller']",222.5431,7.146
+680493,Return to Silent Hill,"['Mystery', 'Drama', 'Horror']",228.6204,5.036
+1159559,Scream 7,"['Horror', 'Mystery', 'Crime']",239.3962,5.929
+1401778,Turbulence,"['Thriller', 'Action', 'Adventure', 'Drama', 'Fantasy']",217.8326,5.63
+1523145,Your Heart Will Be Broken,"['Romance', 'Drama']",175.0108,0.0
+1266798,Dog 51,"['Thriller', 'Science Fiction', 'Crime', 'Action']",177.5536,6.295
+1084242,Zootopia 2,"['Animation', 'Comedy', 'Adventure', 'Family', 'Mystery']",164.976,7.602
+1461181,Hierarchy,"['Action', 'Crime', 'Thriller']",182.1274,5.8
+1419406,The Shadow's Edge,"['Action', 'Crime', 'Drama', 'Thriller']",160.0381,7.249
+1244975,The Orphans,['Action'],123.9073,6.156
+840464,Greenland 2: Migration,"['Adventure', 'Thriller', 'Science Fiction']",135.8523,6.514
+1272837,28 Years Later: The Bone Temple,"['Horror', 'Thriller', 'Science Fiction']",119.3411,7.181
+1301306,A Woman Scorned,['Action'],106.5622,6.346
+1634301,Vanaveera,"['Action', 'Drama']",146.1638,2.0
+83533,Avatar: Fire and Ash,"['Science Fiction', 'Adventure', 'Fantasy']",126.0923,7.277
+937101,In the Morning of La Petite Mort,[],180.0746,7.333
+804370,Arco,"['Animation', 'Science Fiction', 'Adventure', 'Fantasy', 'Family']",112.0841,7.6
+1368166,The Housemaid,"['Drama', 'Mystery', 'Thriller']",106.5799,7.255
+1032892,In the Blink of an Eye,"['Drama', 'Science Fiction']",123.4118,4.097
+755898,War of the Worlds,"['Science Fiction', 'Thriller']",104.8221,4.186
+1316092,"""Wuthering Heights""","['Romance', 'Drama']",90.5324,6.5
+1168190,The Wrecking Crew,"['Action', 'Comedy', 'Crime', 'Mystery']",101.5768,6.93
+1242898,Predator: Badlands,"['Action', 'Science Fiction', 'Adventure']",98.6654,7.716
+1497970,Tom and Jerry: Forbidden Compass,"['Animation', 'Comedy', 'Family', 'Fantasy', 'Adventure']",110.4561,5.4
+434853,Space/Time,"['Science Fiction', 'Action', 'Thriller']",86.5235,5.838
+1311031,Demon Slayer: Kimetsu no Yaiba Infinity Castle,"['Animation', 'Action', 'Fantasy']",91.9652,7.675
+1253000,Deathstalker,"['Fantasy', 'Action', 'Adventure']",79.6869,6.2
+1084244,Toy Story 5,"['Animation', 'Family', 'Comedy', 'Adventure']",69.337,0.0
+1297842,GOAT,"['Animation', 'Comedy', 'Family', 'Action']",74.5292,7.465
+81476,Confessions of a Young American Housewife,['Drama'],48.1529,5.8
+1242937,The Dreadful,['Horror'],67.9382,6.457
+1549519,Sex Trip,['Drama'],74.2096,7.0
+9276,The Faculty,"['Horror', 'Science Fiction']",73.0352,6.563
+1375831,Diabolic,['Horror'],69.3256,7.2
+1353333,Mouseboat Massacre,['Horror'],81.6902,5.5
+1317288,Marty Supreme,['Drama'],59.7074,7.5
+858024,Hamnet,"['Drama', 'Romance', 'History']",61.6356,7.749
+1634858,Cuerno Azulado,['Action'],56.8071,6.923
+475961,Curvature,"['Science Fiction', 'Thriller']",60.6084,4.938
+1305781,Blades of the Guardians: Wind Rises in the Desert,"['Action', 'Drama', 'History']",62.961,7.81
+24428,The Avengers,"['Science Fiction', 'Action', 'Adventure']",59.1879,7.955
+1249508,Grizzly Night,"['Horror', 'Thriller', 'Drama']",64.2432,6.014
+1601243,Oscar Shaw,"['Action', 'Crime', 'Thriller', 'Western']",55.0074,6.625
+1234731,Anaconda,"['Adventure', 'Comedy', 'Horror', 'Action']",57.1312,5.836
+1289893,Somnium,"['Horror', 'Science Fiction', 'Thriller', 'Drama']",59.5427,5.6
+991494,The SpongeBob Movie: Search for SquarePants,"['Animation', 'Family', 'Comedy', 'Adventure', 'Fantasy']",56.5124,6.77
+1110034,Kraken,"['Horror', 'Action', 'Thriller']",50.0377,8.0
+1167307,David,"['Animation', 'Family', 'Drama']",51.757,8.1
+8981,Dear Frankie,"['Drama', 'Family']",44.4595,7.046
+1171145,Crime 101,"['Crime', 'Thriller']",49.7103,6.973
+1511417,Bāhubali: The Epic,"['Action', 'Drama']",52.5924,6.0
+7451,xXx,"['Action', 'Adventure', 'Thriller', 'Crime', 'Drama']",51.6076,5.98
+425274,Now You See Me: Now You Don't,"['Thriller', 'Crime', 'Mystery']",56.8324,6.522
+1600028,A Father's Miracle,['Drama'],44.1456,7.902
+650524,Back to the Past,"['Science Fiction', 'Action', 'Comedy']",48.5318,6.19
+1306368,The Rip,"['Action', 'Thriller', 'Crime']",48.4609,7.073
+1306368,The Rip,"['Action', 'Thriller', 'Crime']",48.4609,7.073
+803796,KPop Demon Hunters,"['Fantasy', 'Music', 'Comedy', 'Animation']",46.3951,8.081
+1317672,Love Me Love Me,"['Romance', 'Drama']",42.7564,5.591
+1428862,Firebreak,"['Thriller', 'Drama']",37.8351,6.241
+207933,Stonehearst Asylum,"['Thriller', 'Mystery', 'Horror']",41.1482,6.852
+1205225,Gates of Flesh,"['Horror', 'Thriller', 'Action']",39.462,5.4
+1258151,Kraken,"['Science Fiction', 'Adventure', 'Drama']",47.3181,6.434
+1327688,One Mile: Chapter One,"['Action', 'Crime']",37.4792,7.313
+1586841,The Trip 8,['Comedy'],49.607,8.667
+157336,Interstellar,"['Adventure', 'Drama', 'Science Fiction']",53.3476,8.468
+1315303,Primate,"['Horror', 'Thriller']",45.8181,6.59
+55547,Route 666,"['Horror', 'Action', 'Thriller']",47.6604,4.981
+1193128,I Was a Stranger,"['Drama', 'Thriller']",41.0161,6.455
+878608,Resurrection,"['Drama', 'Science Fiction', 'Fantasy']",42.3332,6.8
+1043197,Dust Bunny,"['Fantasy', 'Action', 'Thriller']",44.3734,6.59
+1054867,One Battle After Another,"['Thriller', 'Crime', 'Action']",42.3136,7.406
+575265,Mission: Impossible - The Final Reckoning,"['Action', 'Thriller', 'Adventure']",40.4754,7.187
+1584215,The Internship,['Action'],39.5631,6.32
+1310568,Murder at the Embassy,"['Mystery', 'Thriller', 'Action']",37.8961,5.8
+1198994,Send Help,"['Horror', 'Thriller', 'Comedy']",38.707,7.1
+1271895,96 Minutes,"['Action', 'Crime', 'Romance']",38.3198,5.867
+968441,Música,"['Romance', 'Comedy', 'Music']",31.8157,6.5
+94386,Fanny Straw-Top,['Crime'],31.8967,4.864
+1426964,State of Fear,"['Action', 'Thriller', 'Crime', 'Drama']",36.799,5.314
+1460448,Cuerpos locos,"['Comedy', 'Family']",30.5415,5.2
+1062722,Frankenstein,"['Drama', 'Fantasy', 'Horror']",38.3243,7.666
+1429605,F Valentine's Day,"['Romance', 'Comedy']",41.9986,6.188
+597,Titanic,"['Drama', 'Romance']",35.7487,7.9
+1233413,Sinners,"['Horror', 'Action', 'Thriller']",38.35,7.489
+1234821,Jurassic World Rebirth,"['Science Fiction', 'Adventure', 'Action']",39.2177,6.307
+238,The Godfather,"['Drama', 'Crime']",36.0832,8.7
+1246049,Dracula,"['Horror', 'Fantasy', 'Romance']",35.7202,7.12
+1389149,Accused,"['Thriller', 'Mystery', 'Drama']",40.1616,4.605
+1242501,Icefall,"['Action', 'Crime', 'Thriller']",36.2129,6.43
+13006,Split Second,"['Science Fiction', 'Action', 'Crime', 'Thriller', 'Horror']",30.3367,5.923
+1534,Pathfinder,"['Adventure', 'Action']",27.7241,5.659
+1223601,Sisu: Road to Revenge,"['Action', 'War']",37.3447,7.351
+1266990,Kulong,['Drama'],33.1334,6.433
+1263012,Dead Man's Wire,"['Crime', 'Drama']",33.6772,6.6
+587370,Tales from the Magic Garden,"['Animation', 'Drama', 'Family', 'Fantasy']",32.6016,5.0
+278,The Shawshank Redemption,"['Drama', 'Crime']",35.7606,8.716
+1252037,The Tank,"['War', 'Action', 'Drama']",33.2626,7.081
+83519,Witchcraft,['Horror'],22.047,6.645
+617126,The Fantastic 4: First Steps,"['Science Fiction', 'Adventure', 'Action']",38.8248,6.974
+613110,Formidable,"['Drama', 'Comedy']",25.6187,0.0
+19995,Avatar,"['Action', 'Adventure', 'Fantasy', 'Science Fiction']",36.5328,7.6
+521021,Second Best,[],25.6498,6.75
+560204,Arkansas,"['Crime', 'Thriller', 'Action', 'Mystery']",26.3458,5.783
+1228246,Five Nights at Freddy's 2,"['Horror', 'Thriller']",31.0253,6.7
+597,Titanic,"['Drama', 'Romance']",35.7487,7.903
+911430,F1,"['Action', 'Drama']",34.3707,7.769
+1443576,Sundays,['Drama'],42.5302,7.25
+27205,Inception,"['Action', 'Science Fiction', 'Adventure']",32.7971,8.37
+1061474,Superman,"['Science Fiction', 'Adventure', 'Action']",31.3437,7.357
+76600,Avatar: The Way of Water,"['Action', 'Adventure', 'Science Fiction']",32.1173,7.599
+299536,Avengers: Infinity War,"['Adventure', 'Action', 'Science Fiction']",31.6623,8.234
+1241742,EKS,['Drama'],31.2032,4.3
+798645,The Running Man,"['Action', 'Thriller', 'Science Fiction']",32.6601,6.788
+980477,Ne Zha 2,"['Animation', 'Fantasy', 'Adventure', 'Action']",30.7069,8.113
+1146344,Misdirection,"['Horror', 'Thriller']",26.2258,5.917

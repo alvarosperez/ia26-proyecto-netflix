@@ -1,4 +1,3 @@
 ## Integrantes del equipo
 
-- Rodrigo Ahuatzin Oropeza
--
+- Rodrigo Ahuatzin
