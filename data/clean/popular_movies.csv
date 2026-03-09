@@ -1,21 +1,21 @@
-id, titulo, generos, popularidad, nota
-1290821, Shelter, Action, Crime, Thriller, 506.2271, 6.808
-799882, The Bluff, Action, Thriller, 346.9326, 6.011
-1236153, Mercy, Science Fiction, Action, Thriller, 259.2191, 7.135
-1088434, Hellfire, Action, Thriller, 217.8495, 7.132
-1523145, Your Heart Will Be Broken, Romance, Drama, 174.2252, 0.0
-1244975, The Orphans, Action, 153.231, 6.169
-1159559, Scream 7, Horror, Mystery, Crime, 187.7203, 5.837
-680493, Return to Silent Hill, Mystery, Drama, Horror, 199.1589, 5.1
-1401778, Turbulence, Thriller, Action, Adventure, Drama, Fantasy, 187.4331, 5.547
-1301306, A Woman Scorned, Action, 125.9995, 6.333
-1419406, The Shadow's Edge, Action, Crime, Drama, Thriller, 155.946, 7.2
-1266798, Dog 51, Thriller, Science Fiction, Crime, Action, 160.59, 6.295
-1084242, Zootopia 2, Animation, Comedy, Adventure, Family, Mystery, 158.4156, 7.601
-1272837, 28 Years Later: The Bone Temple, Horror, Thriller, Science Fiction, 127.7663, 7.181
-1461181, Hierarchy, Action, Crime, Thriller, 157.4163, 5.833
-840464, Greenland 2: Migration, Adventure, Thriller, Science Fiction, 131.6181, 6.508
-1368166, The Housemaid, Drama, Mystery, Thriller, 110.7472, 7.249
-83533, Avatar: Fire and Ash, Science Fiction, Adventure, Fantasy, 117.2254, 7.277
-1199193, Pose, Thriller, 230.6964, 8.0
-937101, In the Morning of La Petite Mort, , 115.4479, 10.0
+id,titulo,generos,popularidad,nota
+1265609,War Machine,Action | Science Fiction | Thriller,652.6109,7.018
+1290821,Shelter,Action | Crime | Thriller,381.0086,6.719
+799882,The Bluff,Action | Thriller,267.0115,6.244
+680493,Return to Silent Hill,Mystery | Drama | Horror,154.9778,5.04
+1159559,Scream 7,Horror | Mystery | Crime,138.4813,6.0
+1199193,Pose,Thriller,104.5044,7.158
+1327819,Hoppers,Animation | Family | Comedy | Science Fiction | Adventure,139.1041,7.625
+1236153,Mercy,Science Fiction | Action | Thriller,152.607,7.1
+1634301,Vanaveera,Action | Drama,142.6715,7.0
+1088434,Hellfire,Action | Thriller,143.4119,6.9
+1084242,Zootopia 2,Animation | Comedy | Adventure | Family | Mystery,134.2596,7.6
+840464,Greenland 2: Migration,Adventure | Thriller | Science Fiction,145.7162,6.497
+1499984,Gladiator Underground,Action,99.6886,6.979
+83533,Avatar: Fire and Ash,Science Fiction | Adventure | Fantasy,120.0551,7.27
+1419406,The Shadow's Edge,Action | Crime | Drama | Thriller,120.5003,7.211
+696393,Cold Storage,Horror | Science Fiction | Comedy,105.0409,6.489
+1523145,Your Heart Will Be Broken,Romance | Drama,119.6297,0.0
+1168190,The Wrecking Crew,Action | Comedy | Crime | Mystery,121.4809,6.906
+1159831,The Bride!,Science Fiction | Horror | Comedy,102.9913,6.453
+10156,History of the World: Part I,Comedy,77.7032,6.756

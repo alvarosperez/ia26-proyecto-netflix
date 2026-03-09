@@ -2,26 +2,42 @@ import os
 import csv
 import json
 
+
+def crear_diccionario_generos(file_path):
+    diccionario = {}
+    with open(file_path, "r", encoding="utf-8") as fIn:
+        for line in fIn: 
+            line = json.loads(line)
+            diccionario[line['id']] = line['name']
+    return diccionario
+
+
 def json_to_csv(file_path):
     out = []
+    diccionario = crear_diccionario_generos('data/raw/movie_genres.json') 
+
     with open(file_path, "r", encoding="utf-8") as f:
         for line in f:
-            if line.strip() and ( line.strip() == "[" or line.strip() == "]" or line.strip() == ""):
+            if not line.strip():
                 continue
-            else :
-                guardar = json.loads(line.strip())
-                fila = {
-                    "id": guardar.get("id"),
-                    "title": guardar.get("title"),
-                    "genre_ids": guardar.get("genre_ids"),
-                    "popularity": guardar.get("popularity"),
-                    "vote_average": guardar.get("vote_average")
-                }
-                out.append(fila)
+            guardar = json.loads(line.strip())
 
-    fieldnames = ["id","title","genre_ids","popularity","vote_average"]
+            genre_names = []
+            for genre in guardar.get("genre_ids", []):
+                if genre in diccionario:
+                    genre_names.append(diccionario[genre])
+
+            fila = {
+                "id": guardar.get("id"),
+                "title": guardar.get("title"),
+                "genre": genre_names("genre"),
+                "popularity": guardar.get("popularity"),
+                "vote_average": guardar.get("vote_average")
+            }
+            out.append(fila)
+
+    fieldnames = ["id", "title", "genre", "popularity", "vote_average"]
     with open("data/clean/popular_movies.csv", "w", newline="", encoding="utf-8") as csv_file:
-        writer = csv.DictWriter(csv_file,fieldnames,extrasaction="ignore")
+        writer = csv.DictWriter(csv_file, fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(out)
-json_to_csv("data/raw/popular_movies.json")
