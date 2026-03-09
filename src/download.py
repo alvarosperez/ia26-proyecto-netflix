@@ -1,6 +1,6 @@
 import os
 import json
-import requests
+import requests # type: ignore
 from logs import registro_log
 from config import ACCESS_TOKEN
 from clean import json_to_csv
