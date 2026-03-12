@@ -14,7 +14,7 @@ def api_request(url):
     response = requests.get(url, headers=headers)
     return response.json()
 
-def data_writing(file_path, data,mode="w"):
+def data_writing(file_path, data, mode="w"):
     
     os.makedirs("data/raw", exist_ok=True)
 
