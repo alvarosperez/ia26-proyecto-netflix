@@ -42,18 +42,22 @@ genre_data = api_request(genre_url)
 genre_file_path = "data/raw/movie_genres.json" 
 data_writing(genre_file_path, genre_data["genres"])
 
-#series
-series_url = "https://api.themoviedb.org/3/tv/popular"
-series_data = api_request(series_url)
+# series with pagination (same pages as movies for parity)
 series_file_path = "data/raw/popular_series.json"
-data_writing(series_file_path, series_data["results"])
+# clear or create file by writing first page, then append the rest
+for page in range(1, 7):
+    series_url = f"https://api.themoviedb.org/3/tv/popular?language=en-US&page={page}"
+    series_data = api_request(series_url)
+    if page == 1:
+        data_writing(series_file_path, series_data.get("results", []), mode="w")
+    else:
+        data_writing(series_file_path, series_data.get("results", []), mode="a")
 
-#Generos
-
-generos_url = "https://api.themoviedb.org/3/genre/tv/list"
-generos_url = api_request(generos_url)
-generos_file_path = "data/raw/series_genre.json"
-data_writing(generos_file_path, genre_data["genres"])
+# géneros de series
+series_genres_url = "https://api.themoviedb.org/3/genre/tv/list"
+series_genres_data = api_request(series_genres_url)
+genres_file_path = "data/raw/tv_genres.json"
+data_writing(genres_file_path, series_genres_data.get("genres", []))
 
 
 
