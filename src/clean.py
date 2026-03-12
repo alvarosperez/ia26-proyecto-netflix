@@ -72,6 +72,7 @@ def json_to_csv(file_path, genre_path, output_csv):
 
     print(f"Se guardaron {len(out)} registros en {output_csv}")
 
+
 # Llamar a la función con el/los archivos JSON cuando se ejecute directamente
 def main():
     # Películas
@@ -87,6 +88,7 @@ def main():
     series_out = "data/clean/popular_series.csv"
     print(f"Procesando series desde {series_json}")
     json_to_csv(series_json, series_genres, series_out)
+
 
 if __name__ == "__main__":
     main()
