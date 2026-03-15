@@ -14,7 +14,7 @@ def api_request(url):
     response = requests.get(url, headers=headers)
     return response.json()
 
-def data_writing(file_path, data,mode="w"):
+def data_writing(file_path, data, mode="w"):
     
     os.makedirs("data/raw", exist_ok=True)
 
@@ -55,7 +55,10 @@ generos_url = api_request(generos_url)
 generos_file_path = "data/raw/series_genre.json"
 data_writing(generos_file_path, genre_data["genres"])
 
+<<<<<<< HEAD
 
 
 
     
+=======
+>>>>>>> origin/alumno/jorge_sanchez
