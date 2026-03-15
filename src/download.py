@@ -55,10 +55,3 @@ generos_url = api_request(generos_url)
 generos_file_path = "data/raw/series_genre.json"
 data_writing(generos_file_path, genre_data["genres"])
 
-<<<<<<< HEAD
-
-
-
-    
-=======
->>>>>>> origin/alumno/jorge_sanchez

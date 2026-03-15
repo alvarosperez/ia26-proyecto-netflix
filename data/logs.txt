@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-2026-03-01 19:52:11.297021  -  Se guardan19 elementosdata/raw/movie_genres.json
-2026-03-01 19:52:11.833102  -  Se guardan20 elementosdata/raw/popular_series.json
-2026-03-01 19:52:12.378724  -  Se guardan16 elementosdata/raw/serie_genres.json
-2026-03-01 19:52:12.965587  -  Archivo limpio creado en data/clean/popular_movies.csv
-2026-03-02 08:49:26.794643  -  Se guardan19 elementosdata/raw/movie_genres.json
-2026-03-02 08:49:27.484261  -  Se guardan20 elementosdata/raw/popular_series.json
-2026-03-02 08:49:27.999962  -  Se guardan16 elementosdata/raw/serie_genres.json
-2026-03-02 08:49:28.606596  -  Archivo limpio creado en data/clean/popular_movies.csv
-2026-03-02 09:14:31.604292 - Se guardaron 20 elementos en data/raw/popular_movies.json
-2026-03-02 09:14:32.200964 - Se guardaron 20 elementos en data/raw/popular_movies.json
-2026-03-02 09:14:32.779693 - Se guardaron 20 elementos en data/raw/popular_movies.json
-2026-03-02 09:14:33.467129 - Se guardaron 20 elementos en data/raw/popular_movies.json
-2026-03-02 09:14:34.020269 - Se guardaron 20 elementos en data/raw/popular_movies.json
-2026-03-02 09:14:34.671902 - Se guardaron 20 elementos en data/raw/popular_movies.json
-2026-03-02 09:14:35.225882 - Se guardaron 19 elementos en data/raw/movie_genres.json
-2026-03-02 09:14:35.830613 - Se guardaron 20 elementos en data/raw/popular_series.json
-2026-03-02 09:14:36.382136 - Se guardaron 19 elementos en data/raw/series_genre.json
-=======
 2026-02-23 09:54:23.474556 - Se guardaron 20 elementos en data/raw/popular_movies.json
 2026-02-23 09:54:24.305854 - Se guardaron 19 elementos en data/raw/movie_genres.json
 2026-02-23 09:54:25.228748 - Se guardaron 20 elementos en data/raw/popular_series.json
@@ -224,4 +205,3 @@ Se guardaron 16 elementos en data/raw/tv_genres.json
 2026-03-12 17:58:21.139136 - Se guardaron 20 elementos en data/raw/popular_series.json
 2026-03-12 17:58:21.190621 - Se guardaron 20 elementos en data/raw/popular_series.json
 2026-03-12 17:58:21.326348 - Se guardaron 16 elementos en data/raw/tv_genres.json
->>>>>>> origin/alumno/jorge_sanchez
