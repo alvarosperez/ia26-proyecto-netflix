@@ -10,16 +10,6 @@ def json_to_csv(file_path):
                 continue
             else :
                 guardar = json.loads(line.strip())
-<<<<<<< HEAD
-                diccionario = crear_diccionario("data/raw/movie_genres.json") 
-                genre_names = []
-                for genre in guardar.get("genre_ids", []):
-                    genre_names.append(diccionario[genre]) 
-                fila = {
-                    "id": guardar.get("id"),
-                    "title": guardar.get("title"),
-                    "genre_ids": genre_names,
-=======
 
                 #print(guardar.get("genre_ids"))
                 #genre_ids = [28, 80]
@@ -34,7 +24,6 @@ def json_to_csv(file_path):
                     "id": guardar.get("id"),
                     "title": guardar.get("title"),
                     "genre_ids": genre_names, # guardar.get("genre_ids"),
->>>>>>> origin/alumno/jorge_sanchez
                     "popularity": guardar.get("popularity"),
                     "vote_average": guardar.get("vote_average")
                 }
@@ -46,23 +35,6 @@ def json_to_csv(file_path):
         writer.writeheader()
         writer.writerows(out)
 
-<<<<<<< HEAD
-
-def crear_diccionario(file_path):
-    diccionario = {}
-    with open(file_path, "r", encoding="utf-8") as f:
-        for line in f:
-            if line.strip() and ( line.strip() == "[" or line.strip() == "]" or line.strip() == ""):
-                continue
-            else :
-                guardar = json.loads(line.strip())
-                diccionario[guardar["id"]] = guardar["name"]
-
-    return diccionario
-
-generos = crear_diccionario("data/raw/movie_genres.json") 
-print(generos)
-=======
 def crear_diccionario_generos(file_path):
     diccionario = {}
     
@@ -73,6 +45,5 @@ def crear_diccionario_generos(file_path):
 
     return diccionario
 
->>>>>>> origin/alumno/jorge_sanchez
 
 json_to_csv("data/raw/popular_movies.json")
