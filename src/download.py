@@ -66,3 +66,22 @@ with open(clean_file_path, mode="w", newline="", encoding="utf-8") as f:
         generos = [genre_dict[g_id] for g_id in movie["genre_ids"] if g_id in genre_dict]
         generos_str = " | ".join(generos)
         writer.writerow([movie_id, titulo, generos_str, popularidad, nota])
+
+# series clean
+serie_genre_dict = {genre["id"]: genre["name"] for genre in serie_genre_data["genres"]}
+
+clean_series_path = "data/clean/popular_series.csv"
+
+with open(clean_series_path, mode="w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["id", "titulo", "generos", "popularidad", "nota"])
+    
+    for serie in serie_data["results"]:
+        serie_id = serie["id"]
+        titulo = serie["name"]
+        popularidad = serie["popularity"]
+        nota = serie["vote_average"]
+        generos = [serie_genre_dict[g_id] for g_id in serie.get("genre_ids", []) if g_id in serie_genre_dict]
+        generos_str = " | ".join(generos)
+        writer.writerow([serie_id, titulo, generos_str, popularidad, nota])
+        
