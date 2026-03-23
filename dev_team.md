@@ -1,3 +1,3 @@
 ## Integrantes del equipo
 
-- Adrian Reig
+- David Castaños
