@@ -1,11 +1,11 @@
 import pandas as pd
 import streamlit as st
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 st.title("Mi primera web")
 st.subheader("Resumen - datos")
 
-df = pd.read_csv("../data/clean/popular_movies.csv")
+df = pd.read_csv("data/clean/popular_movies.csv")
 
 st.write(df.head(3))
 
@@ -16,13 +16,8 @@ col2.metric("Valoración media", round(df["vote_average"].mean(), 2))
 
 import ast
 
-generos = df["genre_ids"] \
-    .apply(ast.literal_eval).explode().value_counts() \
-    .reset_index()
-
-st.write(generos.head(2))
-
+generos = df["genre_ids"].astype(str).str.strip("[]").str.replace("'", "").str.split(", ").explode().value_counts().head(10)
 fig, ax = plt.subplots()
-ax = plt.bar(generos["genre_ids"], generos["count"])
-# ax.invert_yaxis()
+ax.barh(generos.index, generos.values)
+ax.invert_yaxis()
 st.pyplot(fig)
