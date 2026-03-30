@@ -1,11 +1,11 @@
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
+import matplotlib as plt
 
-st.title("Mi Netflix")
+st.title("Mi primera web")
 st.subheader("Resumen - datos")
 
-df= pd.read_csv("../data/clean/popular_movies.csv")
+df = pd.read_csv("../data/clean/popular_movies.csv")
 
 st.write(df.head(3))
 
@@ -23,7 +23,6 @@ generos = df["genre_ids"] \
 st.write(generos.head(2))
 
 fig, ax = plt.subplots()
-ax.bar(generos["index"], generos["genre_ids"])
-st.pyplot(fig)
+ax = plt.bar(generos["genre_ids"], generos["count"])
 # ax.invert_yaxis()
 st.pyplot(fig)
