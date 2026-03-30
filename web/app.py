@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 st.title("Mi Netflix")
 st.subheader("Resumen - datos")
 
-df = pd.read_csv("data/clean/popular_movies.csv")
+df= pd.read_csv("../data/clean/popular_movies.csv")
 
 st.write(df.head(3))
 
