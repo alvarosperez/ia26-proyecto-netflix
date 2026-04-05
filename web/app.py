@@ -33,3 +33,29 @@ ax.set_ylabel("Cantidad de Películas")
 plt.xticks(rotation=45)
 
 st.pyplot(fig)
+
+
+
+#  SECCIÓN DE SERIES 
+st.markdown("---") 
+st.title("Sección de Series")
+
+df_series = pd.read_csv("../data/clean/popular_series.csv") 
+
+st.write(df_series.head(3))
+
+s_col1, s_col2 = st.columns(2)
+nombre_col = "name" if "name" in df_series.columns else "title"
+
+s_col1.metric("Número de series", df_series[nombre_col].count())
+s_col2.metric("Valoración media series", round(df_series["vote_average"].mean(), 2))
+
+st.subheader("Géneros de Series")
+generos_s = df_series["genre_ids"].apply(ast.literal_eval).explode().value_counts().reset_index()
+generos_s.columns = ['id_genero', 'conteo']
+
+fig2, ax2 = plt.subplots()
+ax2.bar(generos_s["id_genero"].astype(str), generos_s["conteo"], color="orange")
+ax2.set_ylabel("Cantidad de Series")
+plt.xticks(rotation=45)
+st.pyplot(fig2)
