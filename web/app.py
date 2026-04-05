@@ -25,6 +25,6 @@ generos = df["genre_ids"] \
 st.write(generos.head(2))
 
 fig, ax = plt.subplots()
-ax = plt.barh(generos["genre_ids"], generos["count"])
-# ax.invert_yaxis()
+ax.barh(generos["genre_ids"], generos["count"])
+ax.invert_yaxis()
 st.pyplot(fig)
