@@ -5,7 +5,6 @@ import requests
 
 from logs import registro_logs
 from config import ACCESS_TOKEN
-from clean import json_to_csv
 
 
 def api_request(url):
@@ -37,27 +36,32 @@ serie_data = api_request(serie_url)
 serie_file_path = "data/raw/popular_series.json"
 data_writing(serie_file_path, serie_data["results"])
 
+# movies 
+url_movies = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
+movies_data = api_request(url_movies)
+movies_file_path = "data/raw/popular_movies.json"
+data_writing(movies_file_path, movies_data["results"])
+
 # series genres
 serie_genre_url = "https://api.themoviedb.org/3/genre/tv/list?language=en"
 serie_genre_data = api_request(serie_genre_url)
 serie_genre_file_path = "data/raw/serie_genres.json"
 data_writing(serie_genre_file_path, serie_genre_data["genres"])
 
+os.makedirs("data/clean", exist_ok=True)
+
 # movies clean
 url_popular_movies = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
 movies_data = api_request(url_popular_movies)
 movies = movies_data["results"]
 
+
 genre_dict = {genre["id"]: genre["name"] for genre in genre_data["genres"]}
 
-os.makedirs("data/clean", exist_ok=True)
 clean_file_path = "data/clean/popular_movies.csv"
-
-
 with open(clean_file_path, mode="w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(["id", "titulo", "generos", "popularidad", "nota"])
-    
     for movie in movies:
         movie_id = movie["id"]
         titulo = movie["title"]
@@ -67,15 +71,22 @@ with open(clean_file_path, mode="w", newline="", encoding="utf-8") as f:
         generos_str = " | ".join(generos)
         writer.writerow([movie_id, titulo, generos_str, popularidad, nota])
 
+# movie genres clean
+clean_movie_genres_path = "data/clean/movie_genres.csv"
+with open(clean_movie_genres_path, mode="w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["id", "nombre"])
+    for genre in genre_data["genres"]:
+        writer.writerow([genre["id"], genre["name"]])
+registro_logs(f"Se guardaron {len(genre_data['genres'])} géneros en {clean_movie_genres_path}")
+
 # series clean
 serie_genre_dict = {genre["id"]: genre["name"] for genre in serie_genre_data["genres"]}
 
 clean_series_path = "data/clean/popular_series.csv"
-
 with open(clean_series_path, mode="w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
     writer.writerow(["id", "titulo", "generos", "popularidad", "nota"])
-    
     for serie in serie_data["results"]:
         serie_id = serie["id"]
         titulo = serie["name"]
@@ -84,4 +95,12 @@ with open(clean_series_path, mode="w", newline="", encoding="utf-8") as f:
         generos = [serie_genre_dict[g_id] for g_id in serie.get("genre_ids", []) if g_id in serie_genre_dict]
         generos_str = " | ".join(generos)
         writer.writerow([serie_id, titulo, generos_str, popularidad, nota])
-        
+
+# serie genres clean
+clean_serie_genres_path = "data/clean/serie_genres.csv"
+with open(clean_serie_genres_path, mode="w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["id", "nombre"])
+    for genre in serie_genre_data["genres"]:
+        writer.writerow([genre["id"], genre["name"]])
+registro_logs(f"Se guardaron {len(serie_genre_data['genres'])} géneros de series en {clean_serie_genres_path}")
