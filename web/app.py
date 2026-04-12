@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 
-st.title("Mi primera web")
+st.title("Proyecto Netflix RYAO")
 st.subheader("Resumen - datos")
 
 df = pd.read_csv("data/clean/popular_movies.csv")
@@ -21,3 +21,12 @@ fig, ax = plt.subplots()
 ax.barh(generos.index, generos.values)
 ax.invert_yaxis()
 st.pyplot(fig)
+
+st.sidebar.header("Filtros")
+
+# st.sidebar.selectbox
+# st.sidebar.date
+nota_seleccionada = st.sidebar.slider("Nota", 0, 10)
+
+df_filtrado = df[df["vote_average"] > nota_seleccionada]
+st.write(df_filtrado.sort_values("vote_average", ascending=False))

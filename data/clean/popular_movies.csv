@@ -53,12 +53,9 @@ id,title,genre_ids,popularity,vote_average
 991494,The SpongeBob Movie: Search for SquarePants,"['Animation', 'Family', 'Comedy', 'Adventure', 'Fantasy']",53.6709,6.8
 1426964,State of Fear,"['Action', 'Thriller', 'Crime', 'Drama']",45.5819,5.245
 1167307,David,"['Animation', 'Family', 'Drama']",52.6976,8.059
-83519,Witchcraft,['Horror'],45.3315,6.645
-1310568,Murder at the Embassy,"['Mystery', 'Thriller', 'Action']",46.0666,5.8
 302628,Morgengrauen,['Drama'],37.5112,0.0
 13006,Split Second,"['Science Fiction', 'Action', 'Crime', 'Thriller', 'Horror']",56.2424,5.923
 1305781,Blades of the Guardians: Wind Rises in the Desert,"['Action', 'Drama', 'History']",51.4368,7.8
-1584215,The Internship,['Action'],44.8807,6.32
 1584215,The Internship,['Action'],44.8807,6.32
 94386,Fanny Straw-Top,['Crime'],57.3655,4.864
 521021,Second Best,[],57.3717,6.75
@@ -73,15 +70,12 @@ id,title,genre_ids,popularity,vote_average
 83519,Witchcraft,['Horror'],45.3315,6.645
 7451,xXx,"['Action', 'Adventure', 'Thriller', 'Crime', 'Drama']",45.0141,5.98
 157336,Interstellar,"['Adventure', 'Drama', 'Science Fiction']",43.1992,8.468
-1396980,Polar Opposites,"['TV Movie', 'Comedy', 'Romance']",38.6424,7.2
 1054867,One Battle After Another,"['Thriller', 'Crime', 'Action']",41.8208,7.4
 1280234,#SalveRosa,"['Thriller', 'Drama']",42.8007,6.667
 650524,Back to the Past,"['Science Fiction', 'Action', 'Comedy']",45.0666,6.125
 1242501,Icefall,"['Action', 'Crime', 'Thriller']",37.7215,6.433
 1522259,Country Doctor,['Documentary'],40.6676,10.0
-1258151,Kraken,"['Science Fiction', 'Adventure', 'Drama']",40.6082,6.434
 404579,Akira,"['Action', 'Crime', 'Thriller']",47.1108,5.7
-1534,Pathfinder,"['Adventure', 'Action']",40.2935,5.7
 1052558,iPossessed,"['Horror', 'Thriller']",34.2529,6.167
 238,The Godfather,"['Drama', 'Crime']",39.9655,8.7
 14831,Help!,"['Comedy', 'Music', 'Adventure']",39.8336,6.8
@@ -92,15 +86,10 @@ id,title,genre_ids,popularity,vote_average
 1263012,Dead Man's Wire,"['Crime', 'Drama']",38.1481,6.6
 587370,Tales from the Magic Garden,"['Animation', 'Drama', 'Family', 'Fantasy']",35.3287,5.0
 1062722,Frankenstein,"['Drama', 'Fantasy', 'Horror']",37.0366,7.666
-575265,Mission: Impossible - The Final Reckoning,"['Action', 'Thriller', 'Adventure']",39.2785,7.192
-1327819,Hoppers,"['Animation', 'Family', 'Comedy', 'Science Fiction']",36.9052,8.0
 1287141,Pillion,"['Romance', 'Drama', 'Comedy']",36.8977,6.1
-278,The Shawshank Redemption,"['Drama', 'Crime']",36.3884,8.716
-1233413,Sinners,"['Horror', 'Action', 'Thriller']",35.9594,7.491
 1323625,Night Patrol,"['Horror', 'Mystery']",36.2385,4.5
 11393,The Natural,['Drama'],34.5534,6.899
 1258151,Kraken,"['Science Fiction', 'Adventure', 'Drama']",40.6082,6.434
-1062722,Frankenstein,"['Drama', 'Fantasy', 'Horror']",37.0366,7.666
 575265,Mission: Impossible - The Final Reckoning,"['Action', 'Thriller', 'Adventure']",39.2785,7.192
 1327819,Hoppers,"['Animation', 'Family', 'Comedy', 'Science Fiction']",36.9052,8.0
 1233413,Sinners,"['Horror', 'Action', 'Thriller']",35.9594,7.491
