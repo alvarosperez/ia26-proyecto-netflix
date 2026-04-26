@@ -28,3 +28,12 @@ fig, ax = plt.subplots()
 ax.barh(generos["genre_ids"], generos["count"])
 ax.invert_yaxis()
 st.pyplot(fig)
+
+st.sidebar.header("Filtros")
+
+# st.sidebar.selectbox
+# st.sidebar.date
+nota_seleccionada = st.sidebar.slider("Nota", 0, 10)
+
+df_filtrado = df[df["vote_average"] > nota_seleccionada]
+st.write(df_filtrado.sort_values("vote_average", ascending=False))
