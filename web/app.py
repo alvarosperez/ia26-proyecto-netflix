@@ -6,7 +6,6 @@ st.title("Proyecto Netflix")
 
 st.subheader("Resumen - datos")
 
-# 🔧 ARREGLO DE RUTA
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 csv_path = os.path.join(base_dir, "data", "clean", "popular_movies.csv")
 
