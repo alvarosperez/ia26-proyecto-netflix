@@ -1,21 +1,21 @@
-id,name,genre_ids,popularity,vote_average
-79744,The Rookie,"Crime, Drama, Comedy",401.837,8.532
-94722,Tagesschau,N/A,393.1312,6.8
-111110,ONE PIECE,"N/A, N/A",399.2659,8.1
-1416,Grey's Anatomy,Drama,320.1929,8.2
-22980,Watch What Happens Live with Andy Cohen,"N/A, Comedy",309.8606,5.012
-1622,Supernatural,"Drama, Mystery, N/A",325.6884,8.305
-1911,Bones,"Crime, Drama",347.3558,8.196
-33847,The Talk,N/A,271.0224,3.036
-1434,Family Guy,"Animation, Comedy",266.7337,7.392
-2734,Law & Order: Special Victims Unit,"Crime, Drama, Mystery",281.2988,7.9
-456,The Simpsons,"Family, Animation, Comedy",251.4552,8.011
-4614,NCIS,"Crime, Drama, N/A",256.4099,7.621
-2224,The Daily Show,"N/A, Comedy",247.7935,6.409
-70672,Men on a Mission,"N/A, Comedy",240.188,7.512
-49009,The Goldbergs,"Family, Comedy",218.1898,7.472
-5920,The Mentalist,"Crime, Drama, Mystery",232.4787,8.4
-2661,Kamen Rider,"N/A, N/A, Drama",210.7896,6.406
-14424,Young Hearts,"N/A, Comedy, Drama",219.4669,6.2
-2261,The Tonight Show Starring Johnny Carson,N/A,209.8189,7.4
-95479,JUJUTSU KAISEN,"Animation, N/A, N/A",198.3865,8.556
+id,title,genre_ids,popularity,vote_average
+1622,,"['Drama', 'Mystery', 'Unknown']",274.6784,8.3
+224372,,"['Drama', 'Unknown', 'Unknown']",240.6304,8.487
+94722,,['Unknown'],270.4895,6.783
+91239,,['Drama'],272.9356,8.073
+1416,,['Drama'],255.2959,8.21
+549,,"['Crime', 'Drama']",250.4626,7.339
+79744,,"['Crime', 'Drama', 'Comedy']",252.8858,8.534
+456,,"['Family', 'Animation', 'Comedy']",236.4971,8.012
+19530,,"['Unknown', 'Drama']",194.8563,6.9
+4614,,"['Crime', 'Drama', 'Unknown']",221.4451,7.621
+2734,,"['Crime', 'Drama', 'Mystery']",224.015,7.939
+22980,,"['Unknown', 'Comedy']",201.3358,5.031
+95479,,"['Animation', 'Unknown', 'Unknown']",175.5324,8.56
+66732,,"['Unknown', 'Mystery', 'Unknown']",191.5827,8.578
+1399,,"['Unknown', 'Drama', 'Unknown']",176.8392,8.459
+1434,,"['Animation', 'Comedy']",193.7274,7.391
+65733,,"['Unknown', 'Animation', 'Comedy', 'Unknown', 'Unknown', 'Family']",152.8481,8.051
+14424,,"['Unknown', 'Comedy', 'Drama']",168.1922,6.2
+4057,,"['Crime', 'Drama', 'Mystery']",170.1781,8.298
+1408,,['Drama'],167.7769,8.576
